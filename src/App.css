@@ -15,14 +15,60 @@ nav {
   justify-content: space-between;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:20px;
+}
+
 ul {
+  padding: 20px;
+  width:600px;
   display: flex;
   flex-direction: row;
   list-style-type:none ;
+  justify-content: space-between;
 }
 
 ul li {
+  font-size:18px ;
+  font-weight: 500;
   margin: 0 10px ;
+  padding: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background-color: #9579c8;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.nav-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+} 
+
+.nav-input input {
+  font-size: 16px;
+  height:40px;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: #000;
+  padding: 8px;
+  width: 10rem;
+  border-radius: 10px;
+}
+
+.nav-input button {
+  width: 25px ;
+  position: absolute;
+  background-color: transparent;
+  border: none ;
+  right: 10px;
+  cursor: pointer;
 }
 
 .container {
@@ -30,7 +76,22 @@ ul li {
 }
 
 .web-icon-header {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  user-select: none;
+}
+.web-icon-header svg {
   width: 40px;
+}
+
+.web-icon-header h3 {
+  font-size: 16px;
+  width: 80px;
+  text-align: center;
+  align-self: center;
 }
 
 .side-title {
@@ -105,9 +166,9 @@ ul li {
   flex-grow:1;
   position: relative;
   background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/gzZpBDV3nX1AWytfLhbgs/d528553697d959544c8ca5b80b6d8beb/web_developer.png?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=);
-  background-position: calc(100% + 390px);
+  background-position: calc(100% + 180px);
   background-size: cover;
-  border-radius: 20%;
+  border-radius: 10%;
   box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.2);
 } 
 

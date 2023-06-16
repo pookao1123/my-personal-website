@@ -4,16 +4,18 @@ import WebHeaderIcon from './assets/Web_header_icon'
 import FigureBTN from './assets/Figure_Btn'
 import paperplanlogo from "./assets/paperplanlogo.svg"
 import upRightArrow from "./assets/upRightArrow.svg"
+import search_button from "./assets/search_button.svg"
+
+
+function handleSearchBTN(){
+  console.log("Click");
+}
 
 function App() {
-  const mainstyle = {
-    display : 'flex' ,
-    flexwarp : 'warp'
-  };
   const articleStyle = {
     flexgrow : 1 ,
     width : '800px',
-    padding : '50px' 
+    padding : '0 50px' 
   }
 
 
@@ -22,21 +24,21 @@ function App() {
     <>
       <div className="container">
         <nav>
-          <WebHeaderIcon title="Myapp"/>
+          <WebHeaderIcon title="Mycloning website"/>
           <div className="nav-list">
             <ul>
               <li>About</li>
               <li>Serviecs</li>
               <li>Portfolio</li>
-              <li>Etc.</li>
+              <li>Testimonial</li>
             </ul>
           </div>
           <div className="nav-input">
-            <input type="text" />
-            <button></button>
+            <input type="text" placeholder='search'/>
+            <button><img src={search_button} alt=" " onClick={() => handleSearchBTN() } /></button>
           </div>
         </nav>
-        <main style={mainstyle}>
+        <main>
 
           <article style={articleStyle}>
             <div className="side-title">
