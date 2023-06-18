@@ -13,13 +13,16 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
-  margin-top:20px;
+  padding-top: 30px;
+  height: 560px;
 }
+
 
 ul {
   padding: 20px;
@@ -73,7 +76,10 @@ ul li:hover {
 
 .container {
   padding: 0 8rem;
+  height: 960px;
+  background-image: linear-gradient(135deg, rgba(254, 222, 16, 0.8) 5%, rgba(145, 95, 196, 0.8) 80%);
 }
+
 
 .web-icon-header {
   width: 120px;
@@ -102,12 +108,13 @@ ul li:hover {
 }
 
 .side-title p {
-  width: 400px;
+  margin-top:30px;
+  width: 600px;
 }
 
 .side-title h1 {
   justify-self: flex-start;
-  width: 250px;
+  width: 400px;
   font-size:3.5rem;
 }
 
@@ -128,8 +135,8 @@ ul li:hover {
   display: flex;
   align-items:center;
   width: 120px;
-  padding: 8px ;
-  border-radius: 10px;
+  padding: 1.1rem ;
+  border-radius: 12px;
   justify-content:center;
   margin: 0 10px;
   font-weight: 400;
@@ -137,6 +144,7 @@ ul li:hover {
 
 .figure-btn-1:nth-child(1) {
   background-color: #9579c8;
+  color: #fff;
 }
 
 .figure-btn-1:nth-child(2) {
@@ -145,6 +153,8 @@ ul li:hover {
 
 .figure-box {
   display:flex;
+  margin:3rem 0;
+  margin-left: 5rem;
 }
 
 .figure-btn-1  h6 {
@@ -153,37 +163,68 @@ ul li:hover {
 
 .section-btn {
   width:350px;
+  height: 40px;
   margin-top: 24px;
   display: flex;
   align-content: center;
   justify-content: space-between;
 }
 .section-btn h6 {
-  justify-self: flex-start;
+  align-self:center ;
 }
 
 .aside-img {
   flex-grow:1;
   position: relative;
   background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/gzZpBDV3nX1AWytfLhbgs/d528553697d959544c8ca5b80b6d8beb/web_developer.png?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=);
-  background-position: calc(100% + 180px);
+  background-position: calc(100% + 300px);
   background-size: cover;
   border-radius: 10%;
   box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  margin: 20px;
 } 
 
 .aside-img p {
   font-family: 'Rubik', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   top:5rem ;
-  left:9rem; 
+  left:5rem; 
   color:white;
   font-size: 20px;
   text-align: center;
-  width: 10rem;
+  width: 14rem;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 8px;
   box-shadow: 0px 0px 7px 10px rgba(255, 255, 255, 0.3);
+  border-radius: 5%;
+}
+
+.icon-img {
+  background-color: #DDE6ED;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+
+.icon-img img {
+  position: absolute;
+  top: 17%;
+  left:17%;
+  width: 26px;
+}
+
+.article-1 {
+  flex-grow: 1;
+  width: 100px;
+  padding: 0 50px;
+  height: 530px;
   border-radius: 10%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 20px;
 }

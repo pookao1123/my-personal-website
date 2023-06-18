@@ -5,6 +5,10 @@ import FigureBTN from './assets/Figure_Btn'
 import paperplanlogo from "./assets/paperplanlogo.svg"
 import upRightArrow from "./assets/upRightArrow.svg"
 import search_button from "./assets/search_button.svg"
+import ig from "./assets/ig.svg"
+import cube_transparent from "./assets/cube-transparent.svg"
+import cloud from "./assets/cloud.svg"
+
 
 
 function handleSearchBTN(){
@@ -12,17 +16,10 @@ function handleSearchBTN(){
 }
 
 function App() {
-  const articleStyle = {
-    flexgrow : 1 ,
-    width : '800px',
-    padding : '0 50px' 
-  }
-
 
 
   return (
     <>
-      <div className="container">
         <nav>
           <WebHeaderIcon title="Mycloning website"/>
           <div className="nav-list">
@@ -38,9 +35,9 @@ function App() {
             <button><img src={search_button} alt=" " onClick={() => handleSearchBTN() } /></button>
           </div>
         </nav>
+      <div className="container">
         <main>
-
-          <article style={articleStyle}>
+          <article className='article-1'>
             <div className="side-title">
               <h6>Hello!</h6>
               <h1>We have Design Exp.</h1>
@@ -55,19 +52,16 @@ function App() {
             <section className='section-btn'>
               <br />
               <h6>Check out my</h6>
-              <CircleIcon/>
-              <CircleIcon/>
-              <CircleIcon/>
+              <CircleIcon src={ig} alt="ig"/>
+              <CircleIcon src={cube_transparent} alt="cube"/>
+              <CircleIcon src={cloud} alt="cloud"/>
             </section>
-
           </article>
-
-
           <aside className="aside-img">
             <p>"People ignore design that ignore people"</p>
             <button></button>
           </aside> 
-
+      
         </main>
       </div>
     </>
