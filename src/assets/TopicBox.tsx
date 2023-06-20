@@ -7,7 +7,7 @@ export default function TopicBox({id , topic}:any){
             <div style={{width : '10%'}}>
                 <h3>{id}</h3>
             </div>
-            <div style={{width : '90%'}}>
+            <div className='Topic-in-boxs'>
                 <h1>{topic}</h1>
                 <br />
                 <div style={{display : 'flex' , justifyContent : "space-between" ,alignItems : 'center'}}>

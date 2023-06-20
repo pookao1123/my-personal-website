@@ -16,7 +16,6 @@ nav {
 }
 
 
-
 ul {
   padding: 20px;
   width:600px;
@@ -248,25 +247,52 @@ ul li:hover {
 }
 
 .service {
-  padding-top : 60px ;
+  padding : 60px 0  ;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 960px;
 }
 
 .article-2 {
-  width: 480px;
+  width: 600px;
   padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
 }
 
-.article-2 h1 , .article-2 p {
-  padding-left:40px;
+.article-2 h6 {
+  font-size: 12px;
+  position: absolute;
+  transform: rotate(-40deg);
+  color: #9579c8;
+  top:15px ;
+  left: 70px;
+}
+.article-2 div > h1,p {
+  padding-left: 40px;
 }
 
 .article-2 h1  {
   font-size: 5rem;
 }
+.article-2 p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  width:auto;
+}
 
+.Topic-in-boxs {
+  width: 90%;
+}
+
+.Topic-in-boxs  h1 {
+  font-size: 4rem;
+  align-self: flex-start;
+}
 
 .Explore-btn {
   border-radius: 50%;
@@ -278,4 +304,36 @@ ul li:hover {
 
 main.service aside {
   padding-right: 100px;
+}
+
+.svg-purple {
+  fill: #9579c8;
+  stroke: #9579c8;
+}
+
+.Circle-out {
+  display: flex;
+  border: #000 solid 2px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  margin: 0 0 20px 20px;
+}
+
+.Circle-out div  {
+  border: #000 solid 2px;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Circle-out div svg {
+  width:30px;
+  height: auto;
 }

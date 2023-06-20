@@ -9,7 +9,7 @@ import ig from "./assets/ig.svg"
 import cube_transparent from "./assets/cube-transparent.svg"
 import cloud from "./assets/cloud.svg"
 import TopicBox from './assets/TopicBox'
-
+import CircleText from './assets/Circle_text'
 
 function handleSearchBTN(){
   console.log("Click");
@@ -63,9 +63,12 @@ function App() {
         </main>
         <main className="service">
           <article className='article-2'>
-              <h1>service | Offer</h1>
-              <br />
-              <p>---- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem corporis impedit ratione deserunt. Libero reiciendis quibusdam temporibus voluptatibus error doloribus ullam cum fuga veritatis saepe inventore, praesentium explicabo sit et!</p>
+            <h6>service</h6>
+            <div>
+                <h1>service | Offer</h1>
+                <p>---- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem corporis impedit ratione deserunt. Libero reiciendis quibusdam temporibus voluptatibus error doloribus ullam cum fuga veritatis saepe inventore, praesentium explicabo sit et!</p>
+            </div>
+              <CircleText/>
           </article>
           <aside>
               <TopicBox id="01/" topic="Web UI/UX Design" />
