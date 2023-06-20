@@ -8,7 +8,7 @@ import search_button from "./assets/search_button.svg"
 import ig from "./assets/ig.svg"
 import cube_transparent from "./assets/cube-transparent.svg"
 import cloud from "./assets/cloud.svg"
-
+import TopicBox from './assets/TopicBox'
 
 
 function handleSearchBTN(){
@@ -36,7 +36,7 @@ function App() {
           </div>
         </nav>
       <div className="container">
-        <main>
+        <main className='greeting'>
           <article className='article-1'>
             <div className="side-title">
               <h6>Hello!</h6>
@@ -48,7 +48,6 @@ function App() {
               <FigureBTN title="Let's Talk" src={paperplanlogo} width={20}/>
               <FigureBTN title="Portfolio" src={upRightArrow} width={20}/>
             </figure>
-
             <section className='section-btn'>
               <br />
               <h6>Check out my</h6>
@@ -61,7 +60,18 @@ function App() {
             <p>"People ignore design that ignore people"</p>
             <button></button>
           </aside> 
-      
+        </main>
+        <main className="service">
+          <article className='article-2'>
+              <h1>service | Offer</h1>
+              <br />
+              <p>---- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem corporis impedit ratione deserunt. Libero reiciendis quibusdam temporibus voluptatibus error doloribus ullam cum fuga veritatis saepe inventore, praesentium explicabo sit et!</p>
+          </article>
+          <aside>
+              <TopicBox id="01/" topic="Web UI/UX Design" />
+              <TopicBox id="02/" topic="Mobile App UI/UX Design" />
+              <TopicBox id="03/" topic="Dashboard & saas Design" />
+          </aside>
         </main>
       </div>
     </>
