@@ -1,7 +1,7 @@
 import icon from "/icon.svg"
 export default function Navbar() {
   return (
-    <nav className="mb-24" style={{borderBottom : "lightgray solid 1px"}}>
+    <nav className=" w-full fixed bg-white " style={{borderBottom : "lightgray solid 1px"}}>
       <div className="flex items-center justify-between px-96 py-8">
         <img src={icon} className="w-12" alt="icon" />
         <ul className="flex flex-row siz">

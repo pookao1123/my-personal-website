@@ -5,7 +5,7 @@ import About from "./About";
 
 export default function WebBody() {
   return (
-    <div className="px-96 py-8">
+    <div className="px-96 py-40">
         <HeaderProfile/>
         <Bookmarkmenu icon="&#9997;" title="Selected Work" subTitle="View Dribbble"/>
         <CardLayout/>
